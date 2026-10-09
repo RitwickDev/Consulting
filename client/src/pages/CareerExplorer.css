@@ -1,0 +1,151 @@
+.career-explorer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.career-explorer h1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  font-size: 36px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+.title-icon {
+  font-size: 36px;
+}
+
+.subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.cv-selector-card {
+  margin-bottom: 24px;
+}
+
+.cv-selector-card .button {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.suggestions-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.suggestion-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #667eea;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.suggestion-header h3 {
+  color: #1f2937;
+  font-size: 22px;
+  margin: 0;
+  flex: 1;
+}
+
+.match-score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 8px 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.suggestion-section {
+  margin-bottom: 20px;
+}
+
+.suggestion-section:last-child {
+  margin-bottom: 0;
+}
+
+.suggestion-section h4 {
+  color: #667eea;
+  font-size: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.suggestion-section p {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #e0e7ff;
+  color: #4338ca;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.empty-state h3 {
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .suggestion-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .match-score {
+    align-self: flex-start;
+  }
+}
