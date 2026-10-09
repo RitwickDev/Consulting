@@ -1,0 +1,9 @@
+{
+  "name": "AI Career Explorer",
+  "install": "npm install && cd client && npm install && cd .. && (test -f .env || cp .env.example .env)",
+  "start": "bash .cursor/start.sh",
+  "ports": [
+    { "name": "Frontend", "port": 3000 },
+    { "name": "API", "port": 5000 }
+  ]
+}
